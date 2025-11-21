@@ -4,10 +4,11 @@ const pages = Object.freeze({
     CS: 'cs',
     MATH: 'math',
     PHYSICS: 'physics',
+    ABOUT: 'about'
 })
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('#page-content').innerHTML = getPageContent(pages.HOME);
+    document.querySelector('#page-content').innerHTML = getPageContent(pages.CS);
 });
 
 
@@ -19,6 +20,8 @@ function getPageContent(page){
             return document.querySelector('#math').innerHTML;
         case pages.PHYSICS:
             return document.querySelector('#physics').innerHTML;
+        case pages.ABOUT:
+            return document.querySelector('#about').innerHTML;
         case pages.HOME:
         default:
             return document.querySelector('#home').innerHTML;
