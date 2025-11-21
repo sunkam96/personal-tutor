@@ -31,3 +31,7 @@ function getPageContent(page){
 function switchPage(page){
     document.querySelector('#page-content').innerHTML = getPageContent(page);
 }
+
+function scheduleLink(){
+    window.open("https://calendly.com/sunkam-sai/1-hour-personal-tutoring", "_blank");
+}
