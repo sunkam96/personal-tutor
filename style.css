@@ -1,0 +1,27 @@
+
+:root{
+    --sidebar-width: 23%;
+    --main-color: #778da9;
+    --accent-color: #1B263B;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--main-color);
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: var(--sidebar-width);
+    background-color: var(--accent-color);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - var(--sidebar-width));
+}
