@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
     </head>
     <body>
         <div class="page-container">
@@ -8,51 +9,56 @@
             <aside class="sidebar">
                 <div class="sidebar-content">
                     <div class="sidebar-logo">
-                        <div class="logo-circle">PT</div>
-                        <h2>Personal Tutor</h2>
+                        <img src="public/images/Sai.jpg" alt="Sai Sunkam" class="logo-image">
+                        <h2>Sai S</h2>
                     </div>
                     
                     <div class="sidebar-description">
-                        <p class="tagline">Empowering minds, one lesson at a time</p>
-                        <p class="description-text">
-                            Welcome! I'm dedicated to helping students achieve their academic goals through personalized, 
-                            engaging tutoring sessions tailored to each individual's learning style and needs.
-                        </p>
-                        
-                        <div class="sidebar-stats">
-                            <div class="stat-item">
-                                <span class="stat-number">10+</span>
-                                <span class="stat-label">Years Experience</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">500+</span>
-                                <span class="stat-label">Students Helped</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">95%</span>
-                                <span class="stat-label">Success Rate</span>
-                            </div>
-                        </div>
+                        <p class="tagline">Software Engineer at Google</p>
+                        <p class="description-text">I am a private tutor for advanced high school and college students. I specialize in computer science, math, and physics.</p>
+                        <ul>
+                            <li><a class="subject-link" href="#" onclick=switchPage(pages.CS)>AP Computer Science</a></li>
+                            <li><a class="subject-link" href="#" onclick=switchPage(pages.MATH)>AP BC Calculus</a></li>
+                            <li><a class="subject-link" href="#" onclick=switchPage(pages.PHYSICS)>AP Physics</a></li>
+                        </ul>
                     </div>
                     
                     <div class="sidebar-contact">
-                        <h3>Quick Contact</h3>
+                        <h3>Private Tutoring</h3>
                         <div class="contact-items">
-                            <p>📧 tutor@example.com</p>
-                            <p>📞 (555) 123-4567</p>
-                            <p>⏰ Mon-Fri: 9AM-8PM</p>
+                            <p>📧 sunkam.sai@gmail.com</p>
+                            <p>📞 6513879383</p>
+                            <p>⏰ Sun-Thu: 5PM-9PM (Eastern)</p>
+                            <p>$65/hr or $105/2hr</p>
                         </div>
-                        <button class="sidebar-cta">Schedule a Session</button>
+                        <button class="sidebar-cta">Schedule Session</button>
                     </div>
                 </div>
             </aside>
             
             <!-- Main Content -->
             <div class="content">
-                <h1>Welcome to Your Learning Journey</h1>
-                <p>Content area for your tutoring services and information.</p>
+                <div class="page-content" id="page-content"></div>
             </div>
         </div>
     </body>
 </html>
 
+<!-- Individual page content -->
+
+<div id="home">
+    <h1>Welcome to Your Learning Journey</h1>
+    <p>Content area for your tutoring services and information.</p>
+</div>
+<div id="math">
+    <h1>AP Calculus Tutoring</h1>
+    <p>Details about AP Calculus tutoring sessions.</p>
+</div>
+<div id="physics">
+    <h1>AP Physics tutoring</h1>
+    <p>Details about AP Physics tutoring sessions.</p>
+</div>
+<div id="cs">
+    <h1>AP Computer Science Tutoring</h1>
+    <p>Details about AP Computer Science tutoring sessions.</p>
+</div>
