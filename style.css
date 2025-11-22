@@ -219,6 +219,211 @@ body {
     line-height: 1.8;
 }
 
+/* Content Page Styles */
+.intro-text {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.content-section {
+    margin-bottom: 3rem;
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+/* Topics Grid */
+.topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.topic-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.topic-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.topic-card h3 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.topic-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.topic-card ul li {
+    padding: 0.4rem 0;
+    color: var(--text-light);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.topic-card ul li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Approach List */
+.approach-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.approach-item {
+    display: flex;
+    gap: 1.5rem;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    align-items: flex-start;
+}
+
+.approach-icon {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.approach-item h3 {
+    font-size: 1.3rem;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.approach-item p {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin: 0;
+}
+
+/* Challenges List */
+.challenges-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.challenge-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid var(--primary-color);
+}
+
+.challenge-item h4 {
+    font-size: 1.2rem;
+    color: #1f2937;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.challenge-item p {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin: 0;
+}
+
+/* Testimonials */
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.testimonial {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+    color: var(--text-color);
+    border-left: 4px solid var(--primary-color);
+    margin: 0;
+}
+
+.testimonial footer {
+    margin-top: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #415a77 100%);
+    color: white;
+    padding: 3rem;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.cta-section h2 {
+    color: white;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background: white;
+    color: var(--primary-color);
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:active {
+    transform: translateY(0);
+}
+
 /* Scrollbar Styling for Sidebar */
 .sidebar::-webkit-scrollbar {
     width: 8px;
@@ -276,4 +481,8 @@ body {
     .sidebar-logo h2 {
         font-size: 1.3rem;
     }
+}
+
+.page-content-section {
+    display: none;
 }

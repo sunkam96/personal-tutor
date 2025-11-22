@@ -24,7 +24,7 @@ function getPageContent(page){
             return document.querySelector('#about').innerHTML;
         case pages.HOME:
         default:
-            return document.querySelector('#home').innerHTML;
+            return document.querySelector('#cs').innerHTML;
     }
 }
 
